@@ -13,8 +13,10 @@ Primero que nada tienes que armar los Dockerfile de la app y del consumidor, Lue
 
 ### Iniciar un contenedor
 
-`docker run -d -p 8000:8000 app-python:1.0.0`
+`docker run -d --name service-flask-app --network flask -p 8000:8000 app-python:1.0.0`
 
+
+1.- crear net
 
 ### Probar la aplicación: 
 
@@ -37,7 +39,7 @@ curl localhost:8000
 
 docker build -t consumer-python:1.0.0 .
 
-docker run -it -e LOCAL=true consumer-python:1.0.0
+docker run -it -e LOCAL=true --network flask consumer-python:1.0.0
 
 ```
 > docker run -e LOCAL=true -it consumer-python:1.0.1
