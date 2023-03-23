@@ -29,8 +29,8 @@ En las clases vimos: Intro DevOps, Git, Docker, Kubernetes, CI/CD, Jenkins, Gith
 ## **Requerimiento:**
 La empresa **ZERO Technology**, solicita al Equipo de DevOps Trainer SuperPower 🚀 migrar alguno de sus dos proyectos:
 Las opciones presentadas de los dos proyectos: 
-- (final-bootcampdevops-ninja-v1)[./final-bootcampdevops-ninja-v1/Readme.md]
-- (final-bootcampdevops-ninja-v2)[./final-bootcampdevops-ninja-v2/Readme.md]
+- [final-bootcampdevops-ninja-v1](./final-bootcampdevops-ninja-v1/Readme.md)
+- [final-bootcampdevops-ninja-v2].(/final-bootcampdevops-ninja-v2/Readme.md)
 
 Los proyectos estan formados por servicios (**frontend** y **backends**) el requerimiento apunta a desplegarlo en un cluster de Kubernetes. 
 
@@ -44,6 +44,11 @@ Los servicios se van a administrar a partir de manifiestos para desplegar las ap
 - Pueden aprovisionar usando minikube ó k3s ó killercoda
 
 <p align="center"><img src="./assets/minikube.jpeg" width="400"/></p>
+
+> Si la opcion es usar EC2 
+### Infra:
+- Aprovisionar 3 servidores AWS EC2 con Terraform (server-dev, server-prd)
+- Crear los ficheros de terraform + userdata (docker+docker-compose)
 
 ## **CICD**
 Como plataforma para versionar el código e implementar el CI/CD pipeline se va a utilizar alguna de las siguientes opciones: 
@@ -70,11 +75,6 @@ Luego agregar:
 
 ## **Arquitectura:**
 Realizar un diseño gráfico de las herramientas y servicios que utilizarían si implementaran esta solución en una Cloud (AWS, GCP, Azure, etcétera).
-
-* Si la opcion es EC2 
-### Infra:
-- Aprovisionar 3 servidores AWS EC2 con Terraform (server-dev, server-tst, server-prd)
-- Crear los ficheros de terraform + userdata (docker+docker-compose)
 
 ## **Observaciones y recomendaciones:**
 - La arquitectura de la aplicación está formada por servicios backends y frontend los cuales deberían tener su propio repositorio.
