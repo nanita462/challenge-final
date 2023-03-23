@@ -47,7 +47,7 @@ Los servicios se van a administrar a partir de manifiestos para desplegar las ap
 
 > Si la opcion es usar EC2 
 ### Infra:
-- Aprovisionar 3 servidores AWS EC2 con Terraform (server-dev, server-prd)
+- Aprovisionar 2 servidores AWS EC2 con Terraform (server-dev, server-prd)
 - Crear los ficheros de terraform + userdata (docker+docker-compose)
 
 ## **CICD**
