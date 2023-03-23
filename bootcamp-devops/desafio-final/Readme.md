@@ -55,7 +55,8 @@ Como plataforma para versionar el código e implementar el CI/CD pipeline se va 
 - **Jenkins**
 - **Github Actions**
 - **Gitlab**
-Siguiendo la estrategia de branching por entornos.
+
+> Siguiendo la estrategia de branching por entornos.
 
 ## **CICD:**
 Se debe configurar un CI/CD pipeline que implemente las siguientes stages básicos:
