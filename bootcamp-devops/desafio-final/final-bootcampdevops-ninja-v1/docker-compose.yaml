@@ -1,0 +1,36 @@
+version: '3'
+
+services:
+
+  frontend:
+    container_name: front-app
+    build: ./frontend
+    environment:
+      - PRODUCTS_SERVICE=backend-products
+      - SHOPPING_CART_SERVICE=backend-shopping-cart
+    ports:
+      - 3000:3000
+    depends_on:
+      - backend-products
+      - backend-shopping-cart
+    networks:
+      - backend   
+
+  backend-products:
+    container_name: products-app
+    build: ./products
+    ports:
+      - 3001:3001
+    networks:
+      - backend  
+
+  backend-shopping-cart:
+    container_name: shopping-app
+    build: ./shopping-cart
+    ports:
+      - 3002:3002
+    networks:
+      - backend
+
+networks:
+  backend:

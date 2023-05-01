@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: bootf-final-deploy
+  labels:
+    app: front
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: front
+  template:
+    metadata:
+      labels:
+        app: front
+    spec:
+      containers:
+      - name: front-app
+        image: nanita462/fb-frontend-products:1.0.0
+        ports:
+        - containerPort: 3000
+        env:
+        - name: PRODUCTS_SERVICE
+          value: "product"
+        - name: SHOPPING_CART_SERVICE
+          value: "shopping-cart"
