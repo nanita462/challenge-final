@@ -31,23 +31,26 @@ Objetivos:
       -Se construyen las imagenes en Dockerfile
       -Se realiza el push de la imagenes a Docker-Hub      
            
-      - Creación del Docker-Compose 
-          Se crea los 3 contenedores (1 FRONTEND y 2 BACKEND (Products y Shopping-Cart)
-          Se define las variables de entorno para Products_Services y Shopping_Cart_Services
+    Creación del Docker-Compose 
+        Se crea los 3 contenedores (1 FRONTEND y 2 BACKEND (Products y Shopping-Cart)
+        Se define las variables de entorno para Products_Services y Shopping_Cart_Services
           Se asignan los puertos (3000/3001/3002)
           Se crea la red común para los 3 contenedores
           Se realiza prueba manual, probando la IP 
 
-b) -Aprovisonamiento del proyecto en ambiente no PRODUCTIVO (Develop) en Minikube
+b) -Aprovisionamiento del proyecto en ambiente no PRODUCTIVO (Develop) en Minikube
      
-          Se realizan los manifiesto de Kubernetes, de Services y Deploy de cada uno de los contenedores (FRONTEND - PRODUCTS -SHOPPING-CART)
+      Se realizan los manifiesto de Kubernetes, de Services y Deploy de cada uno de los contenedores (FRONTEND - PRODUCTS -SHOPPING-CART)
+      Se realizo el port-forward al address 0.0.0.0 con el puerto correspondiente para el FRONTEND 3000, para el PRODUCTS 3001 y para el SHOPPING-CART el 3002  
+      Se controla la versión de la aplicación (Corroborando que no sea una versión LATER, para que no "PISE" las versiones)
+      Se realiza un stage de aprobación manual antes del deploy en el entorno de PRODUCCIÖN
+      Se hace deploy de la aplicación en Minikube (entorno local) 
           
-          Se controla la versión de la aplicación (Corroborando que no sea una versión LATER, para que no "PISE" las versiones)
-          Se realiza un stage de aprobación manual antes del deploy en el entorno de PRODUCCIÖN
-          Se hace deploy de la aplicación en Minikube (entorno local) 
-          
-   c) -Aprovisionamiento del proyecto en ambiente PRODUCTIVO (PROD) en AWS, en instancia EC2         
-          
+ c) -Aprovisionamiento del proyecto en ambiente PRODUCTIVO (PROD) en AWS, en instancia EC2         
+     
+     
+     
+     
           
           
           
