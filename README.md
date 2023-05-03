@@ -21,21 +21,25 @@ Objetivos:
             Se verifica en el index que START sea igual a node.server.js
             Se define el puerto 3000
             Se verifica en el index que START sea igual a node.server.js
+            ![image](https://user-images.githubusercontent.com/123273088/236048219-670c3368-c7cb-4273-aa91-6c9e7a6b41fd.png)
       
       Carpeta Dockerfile en PRODUCTS
             Se define el puerto 3001
-            
+            ![image](https://user-images.githubusercontent.com/123273088/236048329-017edeec-5fc1-4880-b89b-11ef344cf1dc.png)
+
       Carpeta Dockerfile en PRODUCTS
             Se define el puerto 3001      
-      
+      ![image](https://user-images.githubusercontent.com/123273088/236048384-5eaecab9-6e05-4e2c-b375-3ac656b2c2d4.png)
       
       - Creación del Docker-Compose 
           Se crea los 3 contenedores (1 FRONTEND y 2 BACKEND (Products y Shopping-Cart)
           Se define las variables de entorno para Products_Services y Shopping_Cart_Services
           Se asignan los puertos (3000/3001/3002)
           Se crea la red común para los 3 contenedores
-      
-  b) -Aprovisonamiento del proyecto en ambiente no PRODUCTIVO (Devep) en Minikube
+          ![image](https://user-images.githubusercontent.com/123273088/236048506-5a09ddd7-0cbb-48fe-876d-7f6c0e1b28bb.png)
+
+          
+b) -Aprovisonamiento del proyecto en ambiente no PRODUCTIVO (Devep) en Minikube
      
      - Configuración del PipeLine
           Se realiza el Build de la imagen de Dockerfile
