@@ -11,14 +11,7 @@ Objetivos:
    Paso 2: Se realizo un docker-compose para probar local la aplicación en conjunto y verificar cuales son los errores que presenta 
    Paso 3: Se identificaron los errores y faltas de código de la aplicación
    
-  Del docker-compose.yaml de la carpeta Docker-OnFire-Service se identifico:
-    
-      name es container-name
-      Variables del Entorno = enviroment-readhealth-readerparagraph=http://local:host8080/health, pero existen 3 enviroment en le app.js
-      Puerto 5000
-      El depends-on no está definido 
-  
-  Troubleshotting y Solución Final del Proyecto: De acuerdo a los requerimientos y los obsjetivos planteados por el cliente (ZERO Technology) a continuación se presenta  de forma consecutiva las soluciones y mejoras que se realizaron para el proyecto 
+   Troubleshotting y Solución Final del Proyecto: De acuerdo a los requerimientos y los obsjetivos planteados por el cliente (ZERO Technology) a continuación se presenta  de forma consecutiva las soluciones y mejoras que se realizaron para el proyecto 
   
   
  a) Contenerización de la aplicación 
@@ -40,3 +33,25 @@ Objetivos:
           Se controla la versión de la aplicación (Corroborando que no sea una versión LATER, para que no "PISE" las versiones)
           Se realiza un stage de aprobación manual antes del deploy en el entorno de PRODUCCIÖN
           Se hace deploy de la aplicación en Minikube (entorno local) 
+          
+   c) -Aprovisonamiento del proyecto en ambiente PRODUCTIVO (PROD) en Minikube         
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
