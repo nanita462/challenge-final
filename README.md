@@ -12,18 +12,28 @@ Objetivos:
    Paso 3: Se identificaron los errores y faltas de código de la aplicación
    
    Troubleshotting y Solución Final del Proyecto: De acuerdo a los requerimientos y los obsjetivos planteados por el cliente (ZERO Technology) a continuación se presenta  de forma consecutiva las soluciones y mejoras que se realizaron para el proyecto 
-  
-  
+    
  a) Contenerización de la aplicación 
       
       - Creación del Registry: 
           Carpeta Dockerfile en Frontend
             Se verifica el package y el server.js
-            Se crea el Dockerfile 
-            Se define el puerto 
-            Se verica en el index que START sea igual a node.server.js
+            Se verifica en el index que START sea igual a node.server.js
+            Se define el puerto 3000
+            Se verifica en el index que START sea igual a node.server.js
+      
+      Carpeta Dockerfile en PRODUCTS
+            Se define el puerto 3001
+            
+      Carpeta Dockerfile en PRODUCTS
+            Se define el puerto 3001      
+      
       
       - Creación del Docker-Compose 
+          Se crea los 3 contenedores (1 FRONTEND y 2 BACKEND (Products y Shopping-Cart)
+          Se define las variables de entorno para Products_Services y Shopping_Cart_Services
+          Se asignan los puertos (3000/3001/3002)
+          Se crea la red común para los 3 contenedores
       
   b) -Aprovisonamiento del proyecto en ambiente no PRODUCTIVO (Devep) en Minikube
      
