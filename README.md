@@ -46,7 +46,7 @@
       Se realiza un stage de aprobación manual antes del deploy en el entorno de PRODUCCIÖN
       Se hace deploy de la aplicación en Minikube (entorno local) 
           
- # c) -Aprovisionamiento del proyecto en ambiente PRODUCTIVO (PROD) en AWS, en instancia EC2         
+ # c) -Aprovisionamiento del proyecto en ambiente PRODUCTIVO (PRODUCT) en AWS, en instancia EC2         
      
      Se desplegó en una instancia EC2 de AWS, a la cual se le configuró Grupo de Seguridad y Llave .PEM (TOKEN)
      Se decidio conectarse a la instacia de EC2 por medio de la Cloud Shell, sin embargo al cargale la llave de seguridad no establecia la conexión. Se verifico la conexión al puerto 22 en el Grupo de Seguridad, por lo cual se procedió a visualizar la IP de la Cloud Shell, haciedno un CURL a https://checkip.amazonaws.com, la cual se configuró en le Grupo de Seguridad obteniendo una conexión satisfactoria 
